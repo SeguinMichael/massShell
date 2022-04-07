@@ -1,0 +1,13 @@
+--
+host_list:
+  -
+    host: myserver1
+    login: myuser1
+    check: check_ssh
+    script: ls
+  -
+    host: myserver2
+    login: myuser2
+    check: check_ssh check_sudo
+    script: sudo cat /etc/shadow
+
